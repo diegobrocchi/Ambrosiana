@@ -1,0 +1,27 @@
+VERIFICA VISITA — PINACOTECA AMBROSIANA
+Ultimo controllo: 15 novembre 2026. Visita prevista: dicembre 2026.
+
+COLLOCAZIONI (catalogo online del museo, campi "Piano" e "Sala" delle singole schede)
+- Primo piano, sala 1: Tiziano, Adorazione dei Magi (inv. 202); Caravaggio, Canestra di frutta (151); Luini, Sacra Famiglia con san Giovannino (92)
+- Primo piano, sala 2: Maestro della Dormitio Virginis Massari, Dormitio Virginis (1001)
+- Primo piano, sala 5: Raffaello, Cartone per la Scuola di Atene (126)
+- Primo piano, sala 6: Barocci, Presepe (153); Bassano, Riposo durante la fuga in Egitto (207)
+- Primo piano, sala 7: Jan Brueghel il Vecchio, Vaso di fiori con gioiello, monete e conchiglie (66); Allegoria del Fuoco (68)
+- Primo piano, sala 12: Moroni, Ritratto di gentiluomo (196)
+- Secondo piano, sala 18: Canova (forse G. B. Monti), Autoritratto (181)
+- Secondo piano, sala 19: Hayez, Il bacio, acquerello (708)
+- Piano terra, Aula Leonardi: Salaì, Testa di Cristo Redentore (2686); Ritratto di dama (100); Leonardo, Ritratto di Musico (99)
+
+OPERE IN PRESTITO (pagina "Works on loan" del museo) – escluse dai percorsi:
+- Sala 1: Tiziano, Uomo in armatura (inv. 204), al Museo Poldi Pezzoli fino al 25/01/2027 (al suo posto un Sant'Antonio di Luini del Poldi Pezzoli)
+- Sala 7: Jan Brueghel, Topolino e rose (72), a Palazzo Te, Mantova, fino al 10/01/2027; Fiori in un vaso / Fiori in un bicchiere (58), a Palazzo Reale, Milano, fino al 31/01/2027
+- Sala 8: Joachim Fries, Trofeo con Diana cacciatrice (297), a Mantova fino al 10/01/2027
+- Sala 17: Giandomenico Tiepolo, Presentazione al Tempio (139), a Vicenza fino al 17/01/2027
+
+TESTI
+Le storie sono riscritte dalle schede "Capolavori" del sito del museo (fonte linkata in ogni opera); nessun testo è copiato. Date e titoli seguono il catalogo. Note:
+- La scheda "Locked out of school" di Longoni sul sito riporta per errore il testo dell'Adorazione di Tiziano: Longoni non è stato usato.
+- Luini: la scheda dei capolavori parla di "anni Trenta del Cinquecento", il catalogo data la tavola 1515–1520: si è seguito il catalogo.
+- Barocci: la scheda dice che il quadro entrò all'Ambrosiana dopo la morte del cardinale ma indica "donato nel 1618": la data di ingresso è stata omessa.
+
+IMMAGINI: segnaposto; i file vanno aggiunti in images/ (vedi images/LEGGIMI.txt).

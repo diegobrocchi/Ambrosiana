@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1e9">
+<meta name="description" content="Tre percorsi tematici tra le opere della Pinacoteca Ambrosiana di Milano, con una domanda e una breve storia per ogni opera.">
+<title>Tre percorsi — Pinacoteca Ambrosiana</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Ambrosiana">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">AMBROSIANA <span>/ TRE PERCORSI</span></a>
+    <button id="textSize" class="quiet-button" type="button" aria-label="Ingrandisci il testo">A+</button>
+  </div>
+</header>
+
+<main>
+  <!-- HOME: elenco dei percorsi -->
+  <div id="homeView">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Guida indipendente · Milano</p>
+        <h1>Tre modi<br><em>di guardare</em></h1>
+        <p class="intro">Tre percorsi tra le opere della Pinacoteca Ambrosiana, il museo che il cardinale Federico Borromeo aprì a Milano nel 1618 con la sua collezione. Ognuno segue un’idea diversa: scegli quello che ti incuriosisce di più e lasciati guidare.</p>
+        <div class="hero-meta"><span>5 o 6 opere per percorso</span><span>Una domanda per ogni opera</span><span>Dal primo piano all’Aula Leonardi</span></div>
+      </div>
+    </section>
+
+    <section class="wrap howto">
+      <h2>Come funziona</h2>
+      <ol class="howto-steps">
+        <li><strong>Scegli un percorso</strong> dall’elenco qui sotto: le opere seguono l’ordine di visita del museo, dal primo piano al secondo e infine al piano terra.</li>
+        <li><strong>Davanti a ogni opera</strong> leggi la domanda e il breve testo, poi torna a guardare il quadro.</li>
+        <li><strong>Tocca l’immagine</strong> per vederla in grande e scoprire i dettagli.</li>
+      </ol>
+      <p class="note">Le sale del museo a volte cambiano e qualche opera può essere in prestito o in restauro. Se non trovi un quadro, passa pure al successivo.</p>
+    </section>
+
+    <section id="appBox" class="wrap app-box" hidden>
+      <div class="app-card">
+        <img src="./icons/icon-192.png" alt="" class="app-icon" width="52" height="52">
+        <div class="app-text">
+          <h2 id="appTitle">Tienila sul telefono</h2>
+          <div id="installAndroid" hidden>
+            <p>Aggiungila alla schermata Home: si apre come un’app, a tutto schermo.</p>
+            <button id="installBtn" class="pill pill-strong" type="button">Aggiungi alla Home</button>
+          </div>
+          <div id="installIos" hidden>
+            <p>Per averla come un’app: tocca <strong>Condividi</strong> <span class="ios-share" aria-hidden="true">⬆︎</span> in Safari, poi <strong>“Aggiungi alla schermata Home”</strong>.</p>
+            <p class="small">Poi aprila dall’icona e da lì scarica le immagini qui sotto.</p>
+          </div>
+          <div id="offlineBox" hidden>
+            <p id="offlineText">In museo il segnale può essere debole: scarica ora le immagini per usarla anche senza connessione.</p>
+            <button id="offlineBtn" class="pill" type="button">Scarica per l’uso offline</button>
+            <p id="musicText" class="small">La musica del tempo delle opere è più pesante: scaricala con il wi-fi.</p>
+            <button id="musicBtn" class="pill" type="button">Scarica la musica</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="routesTitle">
+      <h2 id="routesTitle" class="section-title">I percorsi</h2>
+      <div id="routeList" class="route-list"></div>
+    </section>
+  </div>
+
+  <!-- PERCORSO -->
+  <div id="routeView" hidden>
+    <section class="wrap route-head">
+      <a class="back-link" href="#/">← Tutti i percorsi</a>
+      <p id="routeNumber" class="eyebrow"></p>
+      <h1 id="routeTitle" class="route-title"></h1>
+      <p id="routeSubtitle" class="route-subtitle"></p>
+      <p id="routeIntro" class="route-intro"></p>
+      <p id="routeRooms" class="route-rooms"></p>
+      <div class="progress-area">
+        <div class="progress-label"><span id="progressText"></span><button id="resetProgress" class="text-button" type="button">Azzera</button></div>
+        <div class="progress-track"><span id="progressFill"></span></div>
+      </div>
+    </section>
+    <section id="artworks" class="wrap artworks" aria-label="Opere del percorso"></section>
+    <section class="wrap closing">
+      <p class="eyebrow">Dopo l’ultima opera</p>
+      <h2>Quale immagine ti è rimasta addosso?</h2>
+      <p>Non c’è una risposta giusta: ricorda quale opera ha cambiato il tuo modo di guardare.</p>
+      <div class="closing-nav">
+        <a class="pill" href="#/">← Tutti i percorsi</a>
+        <a id="nextRoute" class="pill pill-strong" href="#/"></a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="wrap footer">
+  <p><strong>Tre percorsi — Pinacoteca Ambrosiana</strong> è una guida indipendente, non ufficiale.</p>
+  <p>Guida preparata da Diego Brocchi.</p>
+  <p><a href="https://www.ambrosiana.it/en/pinacoteca-collections/" target="_blank" rel="noopener">Catalogo ufficiale della Pinacoteca ↗</a> · <a href="https://www.ambrosiana.it/en/visit/" target="_blank" rel="noopener">Orari e biglietti ↗</a></p>
+</footer>
+
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Immagine ingrandita">
+  <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Chiudi">✕</button>
+  <img id="lightboxImg" alt="">
+  <p id="lightboxCaption" class="lightbox-caption"></p>
+</div>
+
+
+<script src="./routes.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

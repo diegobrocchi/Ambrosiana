@@ -1,0 +1,27 @@
+PROMPT DI AGGIORNAMENTO — DA USARE IL GIORNO PRIMA DELLA VISITA
+(per lo sviluppatore: incollalo in una nuova conversazione collegata al tuo computer, allegando lo ZIP del progetto)
+
+Aggiorna la guida "Tre percorsi — Pinacoteca Ambrosiana" (sito statico per GitHub Pages, PWA). La visita è DOMANI. Ogni opera dei percorsi deve risultare esposta secondo il catalogo del museo, con piano e sala aggiornati, e non comparire tra le opere in prestito. L'utente finale non deve vedere note per lo sviluppatore.
+
+1. DOVE LEGGERE I DATI (esperienza del 15 novembre 2026)
+- Collocazione: catalogo online https://www.ambrosiana.it/en/pinacoteca-collections/ . Ogni scheda (#/dettaglio/<id>) mostra PIANO e SALA, oppure COLLOCAZIONE "Non esposto". Gli id delle opere usate sono nei link museumPage di routes.js: apri direttamente quelle schede.
+- Il catalogo si carica solo nel browser (applicazione dinamica). Usa il BROWSER INTEGRATO sul computer di Diego (sito ambrosiana.it già autorizzato): naviga alla scheda, attendi 5 secondi, leggi il testo tra "TORNA AI RISULTATI" e "Veneranda Biblioteca". Interrogare direttamente il servizio dati del catalogo è stato bloccato: non farlo.
+- La ricerca del catalogo è lenta: dopo aver scritto nel campo "Cerca nella collezione…" clicca il pulsante con la lente e attendi circa 10 secondi.
+- Prestiti e restauri: https://www.ambrosiana.it/en/visit/works-on-loan/ (elenco per sala con date).
+- Storie: schede "Capolavori" https://www.ambrosiana.it/en/discover/masterpieces/ (testo breve, inventario, tecnica, misure, provenienza). Il sito dichiara i contenuti protetti da copyright: riscrivi, non copiare. La scheda di Longoni contiene per errore il testo del Tiziano.
+- Mappa e percorsi ufficiali: PDF https://www.ambrosiana.it/wp-content/uploads/2025/06/Mappa-IT.pdf (il testo estratto mescola le etichette: per le sale fa fede il catalogo).
+- Schede SIRBeC dell'Ambrosiana su lombardiabeniculturali.it: utili per la storia, ma le collocazioni sono ferme al 1997.
+
+2. COSA AGGIORNARE IN routes.js
+- Per ogni opera dell'oggetto W: floor (1 primo piano, 2 secondo piano, 0 piano terra), room ("Sala 12", "Aula Leonardi"…), date, title se cambiati. roomLabel e availability si calcolano da soli; aggiorna CHECKED con la data del controllo.
+- L'ordine di visita si calcola da solo (primo piano, secondo piano, piano terra; poi numero di sala).
+- Se un'opera non è esposta o è in prestito: sostituiscila con un'opera esposta coerente con il tema del percorso, con storia presa dalla scheda del museo, e aggiungi il suo nome file in images/LEGGIMI.txt.
+- Solo fatti presenti nelle fonti; in caso di dubbio togli il dettaglio.
+
+3. IMMAGINI
+- Le immagini sono file locali images/<chiave>.jpg aggiunti da Diego. Non scaricarle dal sito del museo (riproduzione vietata senza autorizzazione).
+
+4. OUTPUT
+- Aggiorna VERIFICA_VISITA.txt (data, collocazioni, prestiti, sostituzioni).
+- Controlla la sintassi (node --check app.js sw.js; routes.js deve caricarsi) e produci un nuovo ZIP. Non servono numeri di versione: l'app si aggiorna da sola sui telefoni.
+- Non dichiarare verificato ciò che non hai letto: se il sito non è raggiungibile, dillo allo sviluppatore e lascia i dati dell'ultimo controllo.

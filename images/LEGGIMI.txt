@@ -1,0 +1,23 @@
+IMMAGINI DA AGGIUNGERE
+
+Metti in questa cartella un file JPG per ogni opera, con esattamente questo nome.
+Finché un file manca, la guida mostra un riquadro "Immagine da aggiungere" con il nome atteso.
+Consiglio: lato lungo circa 1600 pixel, qualità 80, così la guida resta leggera.
+
+images/moroni.jpg  –  Giovan Battista Moroni, Ritratto di gentiluomo (Michel de l’Hospital?) (inv. 196, Primo piano · Sala 12)
+images/canova.jpg  –  Antonio Canova (forse Giovanni Battista Monti), Autoritratto (inv. 181, Secondo piano · Sala 18)
+images/salai.jpg  –  Gian Giacomo Caprotti, detto Salaì, Testa di Cristo Redentore (inv. 2686, Piano terra · Aula Leonardi)
+images/dama.jpg  –  Pittore tra Lombardia ed Emilia, Ritratto di dama (inv. 100, Piano terra · Aula Leonardi)
+images/musico.jpg  –  Leonardo da Vinci, Ritratto di Musico (inv. 99, Piano terra · Aula Leonardi)
+images/tiziano.jpg  –  Tiziano Vecellio, Adorazione dei Magi (inv. 202, Primo piano · Sala 1)
+images/canestra.jpg  –  Caravaggio, Canestra di frutta (inv. 151, Primo piano · Sala 1)
+images/cartone.jpg  –  Raffaello Sanzio, Cartone preparatorio per la Scuola di Atene (inv. 126, Primo piano · Sala 5)
+images/barocci.jpg  –  Federico Barocci, Presepe (inv. 153, Primo piano · Sala 6)
+images/vaso.jpg  –  Jan Brueghel il Vecchio, Vaso di fiori con gioiello, monete e conchiglie (inv. 66, Primo piano · Sala 7)
+images/fuoco.jpg  –  Jan Brueghel il Vecchio, Allegoria del Fuoco (inv. 68, Primo piano · Sala 7)
+images/luini.jpg  –  Bernardino Luini, Santa Famiglia con san Giovannino (inv. 92, Primo piano · Sala 1)
+images/dormitio.jpg  –  Maestro della Dormitio Virginis Massari, Dormitio Virginis (inv. 1001, Primo piano · Sala 2)
+images/bassano.jpg  –  Jacopo Bassano, Riposo durante la fuga in Egitto (inv. 207, Primo piano · Sala 6)
+images/hayez.jpg  –  Francesco Hayez, Il bacio (inv. 708, Secondo piano · Sala 19)
+
+Attenzione: il sito dell’Ambrosiana dichiara le sue immagini solo per studio e consultazione e vieta la riproduzione senza autorizzazione (richieste: https://www.ambrosiana.it/en/discover/masterpieces/image-requests/). Pubblicarle su un sito pubblico come GitHub Pages richiederebbe quell’autorizzazione. In alternativa, per quasi tutte le opere esistono foto libere su Wikimedia Commons.
